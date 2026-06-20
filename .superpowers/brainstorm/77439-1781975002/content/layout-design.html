@@ -1,0 +1,70 @@
+<h2>整体布局设计方案</h2>
+<p class="subtitle">Toolbox 纯工具网站 — 移动优先响应式布局</p>
+
+<div class="section">
+  <h3>页面结构</h3>
+  <div style="max-width: 700px; border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden;">
+    <div style="background: var(--color-surface-alt); padding: 16px 24px; border-bottom: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-weight: 600;">🔧 Toolbox</div>
+      <div style="display: flex; gap: 16px; font-size: 0.85em; color: var(--color-muted);">
+        <span>首页</span>
+        <span>工具A</span>
+        <span>工具B</span>
+        <span>🌓</span>
+      </div>
+    </div>
+    <div style="min-height: 250px; display: flex; align-items: center; justify-content: center; background: var(--color-bg);">
+      <div style="text-align: center; padding: 40px;">
+        <div style="font-size: 2em; margin-bottom: 12px;">🔧</div>
+        <div style="font-size: 1.2em; font-weight: 500;">主内容区</div>
+        <div style="font-size: 0.85em; color: var(--color-muted); margin-top: 8px;">工具卡片网格 / 工具界面</div>
+        <div style="display: flex; justify-content: center; gap: 16px; margin-top: 20px;">
+          <div style="background: var(--color-surface-alt); padding: 20px; border-radius: 12px; width: 100px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 0.75em;">工具卡片</div>
+          <div style="background: var(--color-surface-alt); padding: 20px; border-radius: 12px; width: 100px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 0.75em;">工具卡片</div>
+          <div style="background: var(--color-surface-alt); padding: 20px; border-radius: 12px; width: 100px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 0.75em;">工具卡片</div>
+        </div>
+      </div>
+    </div>
+    <div style="background: var(--color-surface-alt); padding: 12px 24px; border-top: 1px solid var(--color-border); text-align: center; font-size: 0.8em; color: var(--color-muted);">
+      © 2026 Toolbox · MIT License
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>核心设计决策</h3>
+  <div class="options">
+    <div class="option" data-choice="a" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>极简扁平风格</h3>
+        <p>纯色卡片、无阴影、轻边框、大留白。加载快，视觉干净。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="b" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>毛玻璃微质感</h3>
+        <p>半透明玻璃卡片、柔和阴影、微渐变背景。现代感强。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="c" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content">
+        <h3>类 macOS 风格</h3>
+        <p>圆角大卡片、简洁线条、图标主导、浅灰背景。工具感强。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>导航设计</h3>
+  <p>移动端（<768px）：左侧汉堡菜单展开全屏遮罩导航</p>
+  <p>平板端（768-1024px）：顶部导航 + 面包屑</p>
+  <p>桌面端（>1024px）：完整导航 + 搜索入口</p>
+</div>
+
+<div class="section">
+  <p style="color: var(--color-muted);">💡 你偏爱哪种视觉风格？有想调整的布局细节吗？</p>
+</div>

@@ -1,0 +1,80 @@
+<h2>📐 完整设计定稿</h2>
+<p class="subtitle">确认每个模块的设计细节，然后进入实现阶段</p>
+
+<div class="section">
+  <h3>1. 色彩系统</h3>
+  <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <div style="flex:1; min-width:200px; background:var(--color-surface-alt); border-radius:12px; padding:16px;">
+      <h4 style="margin:0 0 8px;">亮色模式</h4>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#667eea;"></div><span style="font-size:0.85em;">Primary: #667EEA</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#764ba2;"></div><span style="font-size:0.85em;">Accent: #764BA2</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#f5f5f7;border:1px solid #e0e0e0;"></div><span style="font-size:0.85em;">Bg: #F5F5F7</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#ffffff;border:1px solid #e0e0e0;"></div><span style="font-size:0.85em;">Surface: #FFFFFF</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#1d1d1f;"></div><span style="font-size:0.85em;">Text: #1D1D1F</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#86868b;"></div><span style="font-size:0.85em;">Muted: #86868B</span></div>
+      </div>
+    </div>
+    <div style="flex:1; min-width:200px; background:var(--color-surface-alt); border-radius:12px; padding:16px;">
+      <h4 style="margin:0 0 8px;">暗色模式</h4>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#818cf8;"></div><span style="font-size:0.85em;">Primary: #818CF8</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#a78bfa;"></div><span style="font-size:0.85em;">Accent: #A78BFA</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#0f172a;"></div><span style="font-size:0.85em;">Bg: #0F172A</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#1e293b;"></div><span style="font-size:0.85em;">Surface: #1E293B</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#f1f5f9;"></div><span style="font-size:0.85em;">Text: #F1F5F9</span></div>
+        <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:24px;border-radius:6px;background:#64748b;"></div><span style="font-size:0.85em;">Muted: #64748B</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>2. 布局结构</h3>
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>桌面端 >1024px</h4>
+      <ul>
+        <li>左侧导航栏（240px 固定宽度）</li>
+        <li>顶部面包屑 + GitHub 链接</li>
+        <li>中央内容区（flex:1）</li>
+        <li>底部版权信息</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>平板 768-1024px</h4>
+      <ul>
+        <li>左侧导航收缩为图标栏（60px）</li>
+        <li>或汉堡菜单展开</li>
+      </ul>
+    </div>
+    <div class="pros" style="flex:1;">
+      <h4>移动端 <768px</h4>
+      <ul>
+        <li>顶部汉堡菜单</li>
+        <li>全屏覆盖式侧栏</li>
+        <li>底部 Tab 栏（可选）</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>3. 工具加载机制</h3>
+  <p>Hash 路由 → fetch 工具 HTML → 注入内容区 → 执行 init() → 切换时调用 destroy()</p>
+  <p>每个工具独立 CSS 作用域（.tool-{name} 前缀），切换时自动清理</p>
+</div>
+
+<div class="section">
+  <h3>4. 首批实现范围</h3>
+  <p>① 完整架构（router/state/main.css/main.js）</p>
+  <p>② 首页 + 404 页面 + tools-manifest.json</p>
+  <p>③ _template/ 工具模板</p>
+  <p>④ 3 个示例工具：JSON格式化 / 时间戳转换 / UUID生成</p>
+  <p>⑤ 亮暗主题切换</p>
+  <p>⑥ README.md</p>
+</div>
+
+<div class="section">
+  <p style="font-size:0.9em;">✅ 以上设计是否全部认可？没问题的话我就开始写设计文档，然后进入实现阶段。</p>
+</div>

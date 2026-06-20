@@ -116,8 +116,8 @@ function renderResults(results) {
   results.forEach((text, index) => {
     const item = document.createElement('div');
     item.className = 'result-item';
-    // 第一条展示完整内容，其余截断为 27 字符（适配手机端）
-    const displayText = index === 0 ? text : text.slice(0, 27) + '...';
+    // 第一条展示完整内容，其余截断为 23 字符（适配手机端）
+    const displayText = index === 0 ? text : text.slice(0, 23) + '...';
 
     item.innerHTML = `
       <div class="result-number">${index + 1}.</div>
