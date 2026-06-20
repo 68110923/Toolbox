@@ -1,0 +1,23 @@
+<div class="tool-page tool-json-formatter" id="tool-app">
+  <h2>🔧 JSON 格式化</h2>
+  <p class="tool-subtitle">格式化、验证和压缩 JSON 数据，支持语法高亮和错误定位</p>
+
+  <div class="tool-section">
+    <label>输入 JSON</label>
+    <textarea class="textarea" id="jf-input" placeholder="在此粘贴 JSON 数据..." rows="10"></textarea>
+  </div>
+
+  <div class="tool-actions">
+    <button class="btn btn-primary" id="jf-format">🔄 格式化</button>
+    <button class="btn" id="jf-compress">📦 压缩</button>
+    <button class="btn" id="jf-validate">✅ 验证</button>
+    <button class="btn" id="jf-clear">🗑 清空</button>
+  </div>
+
+  <div class="tool-section">
+    <label>输出</label>
+    <div class="tool-result" id="jf-output" style="max-height:500px;"></div>
+  </div>
+
+  <div id="jf-message"></div>
+</div>

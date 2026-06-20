@@ -1,0 +1,23 @@
+/* tools/json-formatter/style.css */
+.tool-json-formatter .json-error {
+  color: var(--color-error);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.06);
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+}
+.tool-json-formatter .json-key { color: #881391; }
+.tool-json-formatter .json-string { color: #1a7f37; }
+.tool-json-formatter .json-number { color: #0550ae; }
+.tool-json-formatter .json-boolean { color: #cf222e; }
+.tool-json-formatter .json-null { color: #656d76; }
+.tool-json-formatter .json-bracket { color: #57606a; }
+
+[data-theme="dark"] .tool-json-formatter .json-key { color: #d2a8ff; }
+[data-theme="dark"] .tool-json-formatter .json-string { color: #7ee787; }
+[data-theme="dark"] .tool-json-formatter .json-number { color: #79c0ff; }
+[data-theme="dark"] .tool-json-formatter .json-boolean { color: #ff7b72; }
+[data-theme="dark"] .tool-json-formatter .json-null { color: #8b949e; }
+[data-theme="dark"] .tool-json-formatter .json-bracket { color: #8b949e; }
