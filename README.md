@@ -100,7 +100,7 @@ Toolbox/
 
 项目部署到 GitHub Pages：
 
-1. 将代码推送到 GitHub 仓库 `Aedda/Toolbox`
+1. 将代码推送到 GitHub 仓库 `68110923/Toolbox`
 2. 在仓库 Settings > Pages 中设置：
    - Source: **Deploy from a branch**
    - Branch: `main`, root `/`
