@@ -116,13 +116,12 @@ function renderResults(results) {
   results.forEach((text, index) => {
     const item = document.createElement('div');
     item.className = 'result-item';
-
-    const dateMatch = text.match(/\d{4}年\d{2}月\d{2}日/g);
-    const badge = dateMatch ? dateMatch[0] : '';
+    // 第一条展示完整内容，其余截断为 27 字符（适配手机端）
+    const displayText = index === 0 ? text : text.slice(0, 27) + '...';
 
     item.innerHTML = `
       <div class="result-number">${index + 1}.</div>
-      <div class="result-content">${escapeHtml(text)}</div>
+      <div class="result-content" title="${escapeHtml(text)}">${escapeHtml(displayText)}</div>
     `;
 
     item.addEventListener('click', () => {
