@@ -2,7 +2,7 @@
 
 > 在线开发工具集合 — 纯前端，零依赖，浏览器中即开即用。
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-blue)](https://aedda.github.io/Toolbox/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deployed-blue)](https://68110923.github.io/Toolbox/)
 
 ## 工具列表
 
@@ -104,7 +104,7 @@ Toolbox/
 2. 在仓库 Settings > Pages 中设置：
    - Source: **Deploy from a branch**
    - Branch: `main`, root `/`
-3. 等待几分钟，访问 `https://aedda.github.io/Toolbox/`
+3. 等待几分钟，访问 `https://68110923.github.io/Toolbox/`
 
 ## 设计语言
 
