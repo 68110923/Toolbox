@@ -1,0 +1,28 @@
+{
+  "tools": [
+    {
+      "id": "json-formatter",
+      "name": "JSON 格式化",
+      "description": "格式化、验证和压缩 JSON 数据，支持语法高亮和错误定位",
+      "icon": "🔧",
+      "path": "/tools/json-formatter/",
+      "keywords": ["json", "格式化", "验证", "压缩"]
+    },
+    {
+      "id": "timestamp-converter",
+      "name": "时间戳转换",
+      "description": "Unix 时间戳与日期时间双向转换，支持秒/毫秒",
+      "icon": "⏱",
+      "path": "/tools/timestamp-converter/",
+      "keywords": ["timestamp", "时间戳", "unix", "日期转换"]
+    },
+    {
+      "id": "uuid-generator",
+      "name": "UUID 生成器",
+      "description": "生成 v4 UUID，支持批量生成和一键复制",
+      "icon": "🔑",
+      "path": "/tools/uuid-generator/",
+      "keywords": ["uuid", "guid", "生成器", "唯一标识"]
+    }
+  ]
+}
