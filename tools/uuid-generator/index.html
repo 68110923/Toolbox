@@ -1,0 +1,35 @@
+<div class="tool-page tool-uuid-generator" id="tool-app">
+  <h2>🔑 UUID 生成器</h2>
+  <p class="tool-subtitle">生成 v4 UUID，支持批量生成和一键复制</p>
+
+  <div class="tool-section">
+    <label>生成数量</label>
+    <div class="tool-row">
+      <input type="number" class="input" id="ug-count" value="1" min="1" max="100" style="max-width:100px;" />
+      <button class="btn btn-primary" id="ug-generate">🎲 生成</button>
+      <button class="btn" id="ug-copy-all">📋 复制全部</button>
+      <button class="btn" id="ug-clear">🗑 清空</button>
+    </div>
+  </div>
+
+  <div class="tool-section">
+    <div class="tool-actions" style="margin:0;">
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--color-text-secondary);cursor:pointer;">
+        <input type="checkbox" id="ug-uppercase" />
+        大写
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--color-text-secondary);cursor:pointer;">
+        <input type="checkbox" id="ug-braces" />
+        带花括号 { }
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--color-text-secondary);cursor:pointer;">
+        <input type="checkbox" id="ug-hyphens" checked />
+        保留连字符 -
+      </label>
+    </div>
+  </div>
+
+  <div class="tool-section">
+    <div class="tool-result" id="ug-output" style="max-height:500px;font-family:var(--font-mono);font-size:0.8rem;"></div>
+  </div>
+</div>
