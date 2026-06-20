@@ -1,0 +1,35 @@
+<div class="tool-page tool-timestamp-converter" id="tool-app">
+  <h2>⏱ 时间戳转换</h2>
+  <p class="tool-subtitle">Unix 时间戳与日期时间双向转换，支持秒/毫秒</p>
+
+  <!-- 时间戳 → 日期 -->
+  <div class="tool-section">
+    <label>时间戳 → 日期</label>
+    <div class="tool-row">
+      <input type="text" class="input" id="ts-input" placeholder="输入 Unix 时间戳（秒或毫秒）" />
+      <select class="select" id="ts-unit">
+        <option value="auto">自动检测</option>
+        <option value="seconds">秒 (s)</option>
+        <option value="milliseconds">毫秒 (ms)</option>
+      </select>
+      <button class="btn btn-primary" id="ts-to-date">→ 转换</button>
+    </div>
+    <div class="tool-result" id="ts-result-1" style="min-height:40px;"></div>
+  </div>
+
+  <!-- 日期 → 时间戳 -->
+  <div class="tool-section">
+    <label>日期 → 时间戳</label>
+    <div class="tool-row">
+      <input type="datetime-local" class="input" id="ts-datetime" />
+      <button class="btn btn-primary" id="ts-to-timestamp">→ 转换</button>
+    </div>
+    <div class="tool-result" id="ts-result-2" style="min-height:40px;"></div>
+  </div>
+
+  <!-- 当前时间戳 -->
+  <div class="tool-section">
+    <button class="btn" id="ts-now">📡 获取当前时间戳</button>
+    <div class="tool-result" id="ts-result-3" style="min-height:40px;"></div>
+  </div>
+</div>
