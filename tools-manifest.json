@@ -23,6 +23,14 @@
       "icon": "🔑",
       "path": "/tools/uuid-generator/",
       "keywords": ["uuid", "guid", "生成器", "唯一标识"]
+    },
+    {
+      "id": "date-replacer",
+      "name": "日期替换",
+      "description": "将策略文本中的今天/昨天/前天等替换为实际A股交易日",
+      "icon": "📅",
+      "path": "/tools/date-replacer/",
+      "keywords": ["日期替换", "同花顺", "策略", "交易日", "A股"]
     }
   ]
 }

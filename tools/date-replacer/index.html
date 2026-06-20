@@ -1,0 +1,26 @@
+<div class="tool-page tool-date-replacer" id="tool-app">
+  <h2>📅 日期替换工具</h2>
+  <p class="tool-subtitle">将策略文本中的"今天/昨天/前天"等替换为实际 A 股交易日日期</p>
+
+  <div class="tool-section">
+    <label>策略文本</label>
+    <div style="position:relative;">
+      <textarea class="textarea" id="dr-input" placeholder="例如: 今天买入，昨天卖出，前天的持仓..." rows="8"></textarea>
+      <button class="btn btn-sm" id="dr-paste" style="position:absolute;bottom:8px;right:8px;z-index:1;">📋 粘贴</button>
+    </div>
+  </div>
+
+  <div class="tool-section">
+    <label>生成版本数量</label>
+    <div class="tool-row">
+      <input type="number" class="input" id="dr-count" value="300" min="1" max="3000" style="max-width:120px;" />
+      <button class="btn btn-primary" id="dr-submit">🚀 生成</button>
+      <button class="btn" id="dr-clear">🗑 清空</button>
+    </div>
+  </div>
+
+  <div class="tool-section">
+    <div id="dr-status" style="font-size:0.8rem;color:var(--color-text-secondary);margin-bottom:8px;"></div>
+    <div id="dr-output"></div>
+  </div>
+</div>
